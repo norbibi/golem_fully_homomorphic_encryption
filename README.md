@@ -50,3 +50,7 @@ This application is only for Linux requestor.
 >```
 >node fully_homomorphic_encryption.mjs --providerid 0x50a6612d55f95ea34f3f82b189ee33dba34c44c4 --computation my_fhe_add --operand1 15 --operand2 8
 >```
+
+<p align="center">
+<img src="fhe.png" width="100%"> 
+</p>
