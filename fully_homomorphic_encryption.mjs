@@ -72,7 +72,7 @@ program
   .option("--paymentdriver <paymentdriver>", "paymentdriver", "erc20")
   .option("--paymentnetwork <paymentnetwork>", "paymentnetwork", "polygon")
   .option("--providerid <providerid>", "providerid", "")
-  .option("--computation <computation>", "computation", "my_fhe_computation")
+  .option("--computation <computation>", "computation", "my_fhe_add")
   .option("--operand1 <operand1>", "operand1", Number, 8)
   .option("--operand2 <operand2>", "operand2", Number, 13)
 
