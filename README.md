@@ -9,14 +9,14 @@ This repo offers a simple homomorphic application, the addition of two integers,
 
 A homomorphic application must be built for this purpose, which is why it is necessary to code it using a dedicated library.
 
-As we are going to use this application on top of Golem, that is to say in a client/server mode, we need to decompose our application into 3 binaries.
+As we are going to use this application on top of Golem, that is to say in a client/server mode, we need to decompose our application into 3 binaries.  
 The sources of these binaries are in the my_fhe_add folder.
 
 	1 - generation of private/public keys and encryption of operands (my_fhe_computation_generate_keys_and_encrypt_datas.cpp)
 	2 - calculation on encrypted operands (my_fhe_computation_compute.cpp)
 	3 - deciphering the result (my_fhe_computation_decrypt_result.cpp)
 
-For ease of use, we use a docker image here for the build and execution of binaries 1 & 3.
+For ease of use, we use a docker image here for the build and execution of binaries 1 & 3 (requestor side).  
 
 The project structure allows you to develop your own homomorphic application.  
 Duplicate and rename the my_fhe_add folder, code your application in the existing source files and pass your application as a parameter to your requestor.
