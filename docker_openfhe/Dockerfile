@@ -11,10 +11,10 @@ RUN git clone https://github.com/openfheorg/openfhe-development.git /usr/src/ope
 WORKDIR /usr/src
 
 RUN cd openfhe-development	\
-	&& mkdir build			\
-	&& cd build				\
-	&& cmake ..				\
-	&& make -j				\
+	&& mkdir build		\
+	&& cd build		\
+	&& cmake ..		\
+	&& make -j		\
 	&& make install
 
 RUN ldconfig
