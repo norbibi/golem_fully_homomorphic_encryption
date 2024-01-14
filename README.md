@@ -24,28 +24,29 @@ Duplicate and rename the my_fhe_add folder, code your application in the existin
 This application is only for Linux requestor.
 
 **Requirements**
+>  
+>Yagna requestor
+>  
+>System packages:  
+>- docker  
+>- nodejs  
+>  
+>Node packages:  
+>- @golem-sdk/golem-js  
+>- commander  
   
-Yagna requestor
-  
-System packages:  
-- docker  
-- nodejs  
-  
-Node packages:  
-- @golem-sdk/golem-js  
-- commander  
-  
-**How to use:**
-```
-sudo npm install -g @golem-sdk/golem-js commander
-git clone https://github.com/norbibi/golem_fully_homomorphic_encryption.git  
-cd golem_fully_homomorphic_encryption  
-```
-Build your application:  
-```
-docker run -ti --rm -v $PWD/my_fhe_add:/usr/src maugnorbert/openfhe  
-```
-Run your Golem application:
-```
-node fully_homomorphic_encryption.mjs --providerid 0x50a6612d55f95ea34f3f82b189ee33dba34c44c4 --computation my_fhe_add --operand1 15 --operand2 8
-```
+**How to use**  
+>Install node packages and clone the repository:  
+>```
+>sudo npm install -g @golem-sdk/golem-js commander
+>git clone https://github.com/norbibi/golem_fully_homomorphic_encryption.git  
+>cd golem_fully_homomorphic_encryption  
+>```
+>Build your application:  
+>```
+>docker run -ti --rm -v $PWD/my_fhe_add:/usr/src maugnorbert/openfhe  
+>```
+>Run your Golem application:
+>```
+>node fully_homomorphic_encryption.mjs --providerid 0x50a6612d55f95ea34f3f82b189ee33dba34c44c4 --computation my_fhe_add --operand1 15 --operand2 8
+>```
